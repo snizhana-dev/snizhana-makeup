@@ -2382,3 +2382,41 @@ strong, b {
         padding: 0.5em !important;     /* Додаємо більше простору навколо, щоб легше було натиснути */
     }
 }
+/* Плаваюча кнопка Телеграм */
+.floating-tg {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 90px; /* Ставимо вище (над дзвінком, у якого bottom: 20px) */
+    right: 20px;
+    background-color: #0088cc; /* Фірмовий колір Telegram */
+    color: #FFF !important;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.floating-tg i {
+    font-size: 30px;
+}
+
+.floating-tg:hover {
+    transform: scale(1.1);
+    background-color: #0077b5;
+}
+
+/* Адаптація для мобілок */
+@media screen and (max-width: 480px) {
+    .floating-tg {
+        width: 50px;
+        height: 50px;
+        bottom: 75px; /* Коригуємо висоту для малих екранів */
+        right: 15px;
+    }
+}
