@@ -2139,16 +2139,16 @@ button,
     margin: 0 0 2em 4em;
     width: 50%; }
     #banner .image img {
-      height: 100%;
-      -moz-object-fit: cover;
-      -webkit-object-fit: cover;
-      -ms-object-fit: cover;
-      object-fit: cover;
-      -moz-object-position: center;
-      -webkit-object-position: center;
-      -ms-object-position: center;
-      object-position: center;
-      width: 100%; }
+    height: 100%;
+    -moz-object-fit: cover;
+    -webkit-object-fit: cover;
+    -ms-object-fit: cover;
+    object-fit: cover;
+    -moz-object-position: center 20%;
+    -webkit-object-position: center 20%;
+    -ms-object-position: center 20%;
+    object-position: center 20%;
+    width: 100%; }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
