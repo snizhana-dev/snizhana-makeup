@@ -2375,3 +2375,10 @@ strong, b {
         right: 15px;
     }
 }
+/* Збільшуємо іконки соцмереж у хедері тільки на мобільних */
+@media screen and (max-width: 736px) {
+    #header .icons a {
+        font-size: 1.5em !important; /* Робимо іконку в 1.5 рази більшою */
+        padding: 0.5em !important;     /* Додаємо більше простору навколо, щоб легше було натиснути */
+    }
+}
